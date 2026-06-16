@@ -1,15 +1,3 @@
-"""
-ADIM 3 — 4 DERİN ÖĞRENME MODELİ
-==================================
-Model 1: MLP        — Descriptor tabanlı, tam bağlı sinir ağı
-Model 2: 1D-CNN     — Descriptor dizisi üzerinde konvolüsyon
-Model 3: GNN (GAT)  — Moleküler graf üzerinde attention mekanizması
-Model 4: SMILES-TFM — Karakter dizisi üzerinde Transformer
-
-Çalıştırma: python step3_models.py --task SR-MMP
-            python step3_models.py --task all
-"""
-
 import argparse
 import numpy as np
 import pandas as pd
