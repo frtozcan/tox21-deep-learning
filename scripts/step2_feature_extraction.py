@@ -1,14 +1,3 @@
-"""
-ADIM 2 — ÖZELLİK ÇIKARIMI (FEATURE EXTRACTION)
-================================================
-Her molekülden 3 farklı temsil oluşturur:
-  1. RDKit Molecular Descriptors (200 sayısal özellik)
-  2. SMILES Token dizisi (Transformer için)
-  3. Moleküler Graf (GNN için)
-
-Çalıştırma: python step2_feature_extraction.py
-"""
-
 import numpy as np
 import pandas as pd
 from rdkit import Chem
