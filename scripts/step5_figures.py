@@ -1,25 +1,3 @@
-"""
-╔══════════════════════════════════════════════════════════════════════════════╗
-║         ADIM 5 — MAKALEYİ KALİTESİNDE FİGÜRLER                            ║
-║══════════════════════════════════════════════════════════════════════════════║
-║  Erturan et al. (2023) J.Hazardous Materials makalesini referans alarak     ║
-║  aşağıdaki figürleri üretir:                                                ║
-║                                                                              ║
-║  Fig 1 — ROC eğrileri (4 model × her görev için subplot)                   ║
-║  Fig 2 — Confusion matrix ısı haritası (4 model × 12 görev)                ║
-║  Fig 3 — Model karşılaştırma çubuk grafiği (AUC, F1, MCC)                  ║
-║  Fig 4 — Görev bazında AUC ısı haritası (model × görev matrisi)            ║
-║  Fig 5 — Radar chart (çok metrikli model karşılaştırması)                  ║
-║  Fig 6 — Makale tarzı sonuç tablosu (Tablo 3 / Tablo 4 karşılığı)         ║
-║                                                                              ║
-║  Çalıştırma:                                                                 ║
-║    python step5_figures.py                                                  ║
-║                                                                              ║
-║  Gereksinim:                                                                 ║
-║    step3_models_v2.py çalışmış, results/model_comparison.xlsx mevcut olmalı ║
-║    pip install matplotlib seaborn pandas openpyxl scikit-learn              ║
-╚══════════════════════════════════════════════════════════════════════════════╝
-"""
 
 import os
 import warnings
