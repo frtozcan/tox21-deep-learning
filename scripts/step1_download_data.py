@@ -1,10 +1,3 @@
-"""
-ADIM 1 — VERİ İNDİRME
-======================
-Tox21 ve diğer toksisite veri setlerini indirir.
-Çalıştırma: python step1_download_data.py
-"""
-
 import requests
 import pandas as pd
 import io
