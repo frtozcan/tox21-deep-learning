@@ -1,32 +1,3 @@
-"""
-╔══════════════════════════════════════════════════════════════════════════════╗
-║         ADIM 4 — SHAP ANALİZİ (4 MODEL × 12 GÖREV)                        ║
-║══════════════════════════════════════════════════════════════════════════════║
-║  Her model için farklı SHAP açıklayıcısı kullanılır:                        ║
-║                                                                              ║
-║  MLP         → KernelExplainer (model-agnostik, yavaş ama evrensel)        ║
-║  1D-CNN      → KernelExplainer (CNN çıkışını wrapper ile düzleştir)        ║
-║  GNN         → KernelExplainer (atom özelliklerini descriptor gibi açıkla) ║
-║  Transformer → KernelExplainer (token embedding'leri açıkla)               ║
-║                                                                              ║
-║  Çıktılar:                                                                   ║
-║    shap/mlp_<görev>_shap.csv          → descriptor önem sıralaması         ║
-║    shap/cnn_<görev>_shap.csv          → descriptor önem sıralaması         ║
-║    shap/gnn_<görev>_shap.csv          → atom özelliği önem sıralaması      ║
-║    shap/tfm_<görev>_shap.csv          → token pozisyon önem sıralaması     ║
-║    shap/summary_top10_<görev>.png     → 4 model beeswarm / bar plot        ║
-║    shap/cross_task_importance.png     → 12 görev karşılaştırma ısıl harita ║
-║    shap/shap_summary.xlsx             → Excel özet tablosu                  ║
-║                                                                              ║
-║  Çalıştırma:                                                                 ║
-║    python step4_shap_analysis.py                                            ║
-║    python step4_shap_analysis.py --task SR-MMP  (tek görev)                ║
-║    python step4_shap_analysis.py --n_background 30 --n_explain 50          ║
-║                                                                              ║
-║  Not: 4 model × 12 görev → ~2-4 saat (CPU'da)                              ║
-║  Hızlandırmak için: --n_background 20 --n_explain 30                       ║
-╚══════════════════════════════════════════════════════════════════════════════╝
-"""
 
 import argparse
 import os
